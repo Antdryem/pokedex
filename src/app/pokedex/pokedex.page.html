@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>pokedex</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="poke-container">
+    <div *ngFor="let pokemon of pokedex.sort(laFuntion)" class="pokemon" [ngStyle]="{'background-color': colors[pokemon.type]}">
+      <div class="img-container">
+        <img
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{pokemon.id}}.png"
+          alt=""
+        />
+      </div>
+      <div class="info">
+        <span class="number">#{{pokemon.id}}</span>
+        <h3 class="name">{{pokemon.name}}</h3>
+        <small class="type"> <b>Type</b> : <span> <b>{{pokemon.type}}</b> </span> </small>
+      </div>
+    </div>
+  </div>
+</ion-content>
