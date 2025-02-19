@@ -7,8 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./pokedex/pokedex.module').then( m => m.PokedexPageModule)
   },
   {
-    path: '',
-    redirectTo: 'home',
+    path: '**',
+    redirectTo: 'pokedex',
     pathMatch: 'full'
   },
 ];

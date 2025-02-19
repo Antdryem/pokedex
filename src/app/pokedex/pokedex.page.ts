@@ -23,7 +23,11 @@ export class PokedexPage implements OnInit {
     psychic: 'lightcoral',
     flying: 'lightgray',
     fighting: 'mediumpurple',
-    normal: 'gray'
+    normal: 'gray',
+    ice: 'lightblue',
+    ghost: 'darkslategray',
+    dark: 'black',
+    steel: 'darkgray'
   }
 
   ngOnInit() {
